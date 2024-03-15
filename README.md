@@ -11,6 +11,7 @@ by [Mia Mecklenburg](https://github.com/MiaMarmeladenbrot)
 - Search for movies.
 - Reset search results.
 - Filter search results by date, rating, name.
+- Show more details on a separate page.
 
 ## Screenshots
 
