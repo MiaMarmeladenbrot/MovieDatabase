@@ -1,8 +1,18 @@
-.search {
+.search input[type="text"] {
+  margin-right: 1rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 20px;
+  border: none;
+  font-family: Queensides;
+  width: 16rem;
   margin-bottom: 1rem;
 }
 
-.search input {
+.search input[type="submit"] {
   margin-right: 1rem;
-  padding: 0.2rem 0.5rem;
+  margin-bottom: 1rem;
+}
+
+::placeholder {
+  font-family: Queensides;
 }

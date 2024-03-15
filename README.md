@@ -1,9 +1,39 @@
-# React + Vite
+# Movie Database
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+by [Mia Mecklenburg](https://github.com/MiaMarmeladenbrot)
 
-Currently, two official plugins are available:
+## Live Site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# MovieDatabase
+[click here](https://wanderwetter.vercel.app/)
+
+## Purpose of the website
+
+- Search for movies.
+- Reset your search results.
+- Filter the search results (by date, by rating, by name).
+
+## Screenshots
+
+### Desktop Home
+
+<img src="./public/img/screenshots/DesktopHome.png" width="700px" /><br/>
+
+### Desktop Details
+
+<img src="./public/img/screenshots/DesktopDetails.png" width="700px"><br/>
+
+### Tablet Home
+
+<img src="./public/img/screenshots/TabletHome.png" width="400px"><br/>
+
+### Tablet Details
+
+<img src="./public/img/screenshots/TabletDetails.png" width="400px"><br/>
+
+### Mobile Home
+
+<img src="./public/img/screenshots/MobileHome.png" width="350px"><br/>
+
+### Mobile Details
+
+<img src="./public/img/screenshots/MobileDetails.png" width="400px"><br/>

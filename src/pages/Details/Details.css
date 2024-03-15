@@ -1,33 +1,40 @@
 .details {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   padding-top: 5rem;
   min-height: 100dvh;
-  position: relative;
+  /* position: relative; */
 
-  background: linear-gradient(to top, #f5d32974, #f5d32974),
-    url(/img/details.jpg) center no-repeat;
+  /* linear-gradient(to top, #f5d32974, #f5d32974), */
+  /* background: url(/img/details.jpg) center no-repeat; */
+  background: url(/img/eyes.jpg) center no-repeat;
+
   background-size: cover;
 }
 
-.details img {
-  width: 20px;
+.details .back-arrow {
+  width: 25px;
   position: absolute;
-  /* top: 0;
-  left: 0; */
-  top: 2rem;
-  left: 2rem;
+  top: 1rem;
+  left: 1rem;
+  /* top: 2rem;
+  left: 2rem; */
   cursor: pointer;
+  /* fill: #ef1722; */
 }
 
 .details div {
   text-align: center;
-  /* position: relative; */
-  padding: 3rem;
+  position: relative;
+  padding: 3.5rem;
+
+  background-color: rgba(240, 248, 255, 0.895);
+  border-radius: 2rem;
 }
 
-.details h2,
+.details div h2,
 p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
 }

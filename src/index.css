@@ -1,5 +1,85 @@
+@font-face {
+  font-family: Wizard;
+  src: url(/font/WizardryNight.ttf);
+}
+
+@font-face {
+  font-family: Queensides;
+  src: url(/font/Queensides.ttf);
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-family: Queensides;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-family: Wizard;
+  font-size: 7rem;
+}
+
+h2 {
+  font-family: Wizard;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+.btn-red {
+  background-color: #ef1722;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 20px;
+  border: none;
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  font-family: Queensides;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-lila {
+  background-color: #8064db;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 20px;
+  border: none;
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  font-family: Queensides;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-lila2 {
+  background-color: #8064dbba;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 20px;
+  border: none;
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  font-family: Queensides;
+  font-size: 1rem;
+  cursor: pointer;
 }

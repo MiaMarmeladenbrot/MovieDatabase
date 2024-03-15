@@ -6,12 +6,49 @@
 
 .output__container div {
   text-align: center;
-  color: white;
-  background-color: grey;
-  padding: 0.625rem;
+
+  background-color: rgba(240, 248, 255, 0.79);
+  border-radius: 2rem;
+
+  overflow: hidden;
+}
+
+.output__container img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .output__container h2,
 p {
   margin-bottom: 0.5rem;
+  padding: 1rem;
+}
+
+.error {
+  grid-column: 2 / span 3;
+}
+
+/* # Media Queries */
+@media only screen and (max-width: 1250px) {
+  .output__container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .output__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .output__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .output__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

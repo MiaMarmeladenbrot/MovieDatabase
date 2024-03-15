@@ -44,11 +44,21 @@ const Buttons = (props) => {
 
   return (
     <section className="buttons">
-      <button onClick={sortDateA}>Date Ascending</button>
-      <button onClick={sortDateD}>Date Descending</button>
-      <button onClick={sortRate}>best rate</button>
-      <button onClick={sortAZ}>A-Z</button>
-      <button onClick={sortZA}>Z-A</button>
+      <button className="btn-lila2" onClick={sortDateA}>
+        Date Ascending
+      </button>
+      <button className="btn-lila2" onClick={sortDateD}>
+        Date Descending
+      </button>
+      <button className="btn-lila2" onClick={sortRate}>
+        Best Rate
+      </button>
+      <button className="btn-lila2" onClick={sortAZ}>
+        A-Z
+      </button>
+      <button className="btn-lila2" onClick={sortZA}>
+        Z-A
+      </button>
     </section>
   );
 };

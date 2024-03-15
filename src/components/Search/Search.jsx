@@ -18,11 +18,21 @@ const Search = (props) => {
     props.setMoviesState(searchedMovies);
   };
 
+  const reset = () => {
+    props.setMoviesState(props.movies);
+  };
+
   return (
     <section className="search">
       <form onSubmit={getInput}>
-        <input type="text" />
-        <input type="submit" />
+        <input type="text" placeholder="Which movie are you looking for?" />
+        <input className="btn-lila" type="submit" value={"Search"} />
+        <input
+          onClick={reset}
+          className="btn-lila"
+          type="reset"
+          value="Reset"
+        />
       </form>
     </section>
   );
