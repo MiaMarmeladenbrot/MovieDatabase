@@ -4,13 +4,13 @@ by [Mia Mecklenburg](https://github.com/MiaMarmeladenbrot)
 
 ## Live Site
 
-[click here](https://wanderwetter.vercel.app/)
+[click here](https://movie-database-sandy.vercel.app/)
 
 ## Purpose of the website
 
 - Search for movies.
-- Reset your search results.
-- Filter the search results (by date, by rating, by name).
+- Reset search results.
+- Filter search results by date, rating, name.
 
 ## Screenshots
 
