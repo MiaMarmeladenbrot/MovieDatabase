@@ -2,73 +2,49 @@ import "./MoviesOutput.css";
 import Stars from "../Stars";
 import movies from "../movies";
 import { useState } from "react";
+import Buttons from "../Buttons/Buttons";
+import Search from "../Search/Search";
+import { Link } from "react-router-dom";
 
 const MoviesOutput = () => {
   // state für die gefilterten Movies, default ist das ursprüngliche Movie-Array:
   const [moviesState, setMoviesState] = useState(movies);
-
-  // Sortier-Funktion Date Ascending:
-  const sortDateA = () => {
-    const temp = movies.slice().sort((a, b) => Number(a.year) - Number(b.year));
-    setMoviesState(temp);
-  };
-
-  // Sortier-Funktion Date Descending:
-  const sortDateD = () => {
-    const temp = movies.slice().sort((a, b) => Number(b.year) - Number(a.year));
-    setMoviesState(temp);
-  };
-
-  // Sortier-Funktion Rate:
-  const sortRate = () => {
-    const temp = movies.slice().sort((a, b) => Number(b.rate) - Number(a.rate));
-    setMoviesState(temp);
-  };
-
-  // Sortier-Funktion A-Z:
-  const sortAZ = () => {
-    const temp = movies.slice().sort((a, b) => a.title.localeCompare(b.title));
-    // const temp = movies.slice().sort((a, b) => a.title - b.title);
-    setMoviesState(temp);
-    console.log("läuft");
-    console.log(temp);
-  };
-
-  // Sortier-Funktion Z-A:
-  const sortZA = () => {
-    const temp = movies
-      .slice()
-      .sort((a, b) => -1 * a.title.localeCompare(b.title));
-    setMoviesState(temp);
-  };
+  console.log(movies);
 
   return (
     <section>
-      <button onClick={sortDateA}>Date Ascending</button>
-      <button onClick={sortDateD}>Date Descending</button>
-      <button onClick={sortRate}>best rate</button>
-      <button onClick={sortAZ}>A-Z</button>
-      <button onClick={sortZA}>Z-A</button>
+      <Search setMoviesState={setMoviesState} moviesState={moviesState} />
+      <Buttons setMoviesState={setMoviesState} moviesState={moviesState} />
 
       <section className="output__container">
-        {moviesState.map((movie, index) => (
-          <div key={index}>
-            <h2>{movie.title}</h2>
-            <p>{movie.year}</p>
-            <p>{movie.director}</p>
-            <p>{movie.duration}</p>
-            <Stars rate={movie.rate} />
-            {movie.genre.map((genreItem, index) => (
-              <p key={index}>{genreItem}</p>
-            ))}
-          </div>
-        ))}
+        {moviesState.length > 0 ? (
+          moviesState.map((movie, index) => (
+            <div key={index}>
+              <h2>{movie.title}</h2>
+              <p>{movie.year}</p>
+              <p>{movie.director}</p>
+              <p>{movie.duration}</p>
+              <Stars rate={movie.rate} />
+              {movie.genre.map((genreItem, index) => (
+                <p key={index}>{genreItem}</p>
+              ))}
+              <Link to={`/details/${movie.title}`}>More Info</Link>
+            </div>
+          ))
+        ) : (
+          <p>Leider haben wir diesen Film nicht in der Datenbank.</p>
+          // //# wie kriege ich die Fehlermeldung wieder weg bei neuer Suche?
+        )}
       </section>
     </section>
   );
 };
 
 export default MoviesOutput;
+
+{
+  /* <Link to="/details/"></Link> */
+}
 
 // {movies.map((movie, index) => (
 //     <div key={index}>

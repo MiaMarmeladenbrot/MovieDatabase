@@ -1,0 +1,33 @@
+.details {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 5rem;
+  min-height: 100dvh;
+  position: relative;
+
+  background: linear-gradient(to top, #f5d32974, #f5d32974),
+    url(/img/details.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.details img {
+  width: 20px;
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  top: 2rem;
+  left: 2rem;
+  cursor: pointer;
+}
+
+.details div {
+  text-align: center;
+  /* position: relative; */
+  padding: 3rem;
+}
+
+.details h2,
+p {
+  margin-bottom: 1.5rem;
+}

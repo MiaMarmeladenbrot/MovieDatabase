@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
-  padding: 2rem;
 }
 
 .output__container div {

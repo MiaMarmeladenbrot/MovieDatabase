@@ -1,11 +1,13 @@
 import "./Home.css";
-import movies from "../../components/movies";
 import MoviesOutput from "../../components/MoviesOutput/MoviesOutput";
+import Header from "../../components/Header/Header";
 
 const Home = () => {
   return (
-    <section>
+    <section className="home">
+      <Header />
       <h1>Movies</h1>
+
       <MoviesOutput />
     </section>
   );
