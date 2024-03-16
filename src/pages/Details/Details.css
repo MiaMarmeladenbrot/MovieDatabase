@@ -4,10 +4,7 @@
   align-items: center;
   padding-top: 5rem;
   min-height: 100dvh;
-  /* position: relative; */
 
-  /* linear-gradient(to top, #f5d32974, #f5d32974), */
-  /* background: url(/img/details.jpg) center no-repeat; */
   background: url(/img/eyes.jpg) center no-repeat;
 
   background-size: cover;
@@ -18,10 +15,8 @@
   position: absolute;
   top: 1rem;
   left: 1rem;
-  /* top: 2rem;
-  left: 2rem; */
+
   cursor: pointer;
-  /* fill: #ef1722; */
 }
 
 .details div {
@@ -37,4 +32,5 @@
 p {
   margin-bottom: 0.5rem;
   padding: 0.5rem;
+  max-width: 20ch;
 }

@@ -1,9 +1,13 @@
+// ! props: rate
 const Stars = (props) => {
+  // leeres array, um Anzahl an Sternen reinzupushen:
   let rating = [];
+
+  // props-Annahme mit Rundung:
   let rateItem = Math.floor(props.rate);
 
+  // je nach Rating Sterne ins array pushen:
   for (let i = 0; i < rateItem; i++) {
-    // rating.push("⭐️");
     rating.push(
       <svg
         xmlns="http://www.w3.org/2000/svg"

@@ -1,6 +1,6 @@
 import "./Search.css";
 
-//! props: setMoviesState, moviesState
+//! props: setMoviesState, moviesState, movies
 const Search = (props) => {
   // Funktion, um UserInput zu bekommen und mit array zu vergleichen:
   const getInput = (e) => {
@@ -18,6 +18,7 @@ const Search = (props) => {
     props.setMoviesState(searchedMovies);
   };
 
+  // reset-Button auf ursprüngliches array:
   const reset = () => {
     props.setMoviesState(props.movies);
   };

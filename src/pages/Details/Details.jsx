@@ -20,8 +20,6 @@ const Details = () => {
     setMovieDetails(find);
   }, [movies]);
 
-  console.log(movieDetails);
-
   return (
     <section className="details">
       <div>
